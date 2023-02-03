@@ -1,0 +1,33 @@
+.btn{
+	padding: 10px 23px;
+	background-color: $main-color;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.35s;
+	border: 2px solid $main-color;
+	z-index: 1;
+	font-weight: bold;
+	font-size: 16;
+	&::after {
+		content: "";
+		background: #ecf0f1;
+		position: absolute;
+		z-index: -1;
+		padding: 0.85em 0.75em;
+		display: block;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		transform: scale(0, 0) rotate(-180deg);
+		transition: all 0.3s ease-out;
+	}
+	&:hover{
+		text-decoration: none;
+		color: rgb(66, 162, 252);
+		border: 2px solid #3a92a8;
+	}
+	&:hover::after{
+		transform: scale(1, 1) rotate(0deg);
+	}
+}

@@ -1,0 +1,30 @@
+.side-penal{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 340px;
+	position: fixed;
+	left: 50px;
+	top: 230px;
+	z-index: 3;
+	align-items: center;
+	max-width: 25px;
+	&__line{
+		width: 2px;
+		height: 70px;
+		background-color: #000000;
+	}
+	&__body{
+		transform: rotate(-90deg) translateX(-40%);
+		height: 25px;
+		width: 150px;
+	}
+	&__text{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		/* identical to box height */
+		color: #000000;
+	}
+}
